@@ -1,0 +1,32 @@
+@mixin column-flex-display($gap: 30px) {
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+}
+
+.sidebar {
+    @include column-flex-display($gap: 80px);
+    @include left-alignment;
+    max-width: 300px;
+    margin-bottom: 100px;
+
+    &__language-selector {
+        @include text-base($size: 18px, $color: $white, $font-weight: 600);
+        align-self: flex-start;
+        border: none;
+    }
+    &__menu {
+        @include column-flex-display;
+        &__text,
+        &__slider,
+        &__table {
+            align-self: flex-start;
+        }
+        &__text {
+            @include text-base($size: 18px, $font-weight: 600);
+        }
+        &__slider {
+            margin-bottom: 40px;
+        }
+    }
+}

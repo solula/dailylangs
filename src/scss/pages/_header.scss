@@ -1,14 +1,14 @@
 .header {
+    @include left-alignment;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: $white;
-    padding: 48px;
-    margin-left: 72px;
 
     &__logo {
         font-size: 24px;
         font-weight: bold;
+        margin-right:30px;
     }
 
     &__menu {
@@ -36,12 +36,12 @@
                 height: 31px;
                 margin-top: 18px;
             }
-        
+
             &__user-icon {
                 width: 61.929px;
                 height: 62.657px;
             }
-        
+
             &__select {
                 @include text-base($size: 18px, $font-weight: 600);
                 border: none;

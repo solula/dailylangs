@@ -1,6 +1,11 @@
 $black: #000000;
-$white: #FFFFFF;
-$violet: #C05AFF;
-$yellow: #FFFD50;
-$pink: #FF50BA;
-$green: #C9FF50;
+$white: #ffffff;
+$violet: #c05aff;
+$yellow: #fffd50;
+$pink: #ff50ba;
+$green: #c9ff50;
+
+@mixin left-alignment {
+    margin-left: 72px;
+    padding: 48px;
+}

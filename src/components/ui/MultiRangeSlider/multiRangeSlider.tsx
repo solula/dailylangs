@@ -46,7 +46,7 @@ const MultiRangeSlider: React.FC<MultiRangeSliderProps> = ({
     }, [minVal, maxVal, onChange]);
 
     return (
-        <div className="container">
+        <div>
             <input
                 type="range"
                 min={min}

@@ -13,6 +13,10 @@
             &__item {
                 @include text-base($size: 18px, $color: $white, $font-weight: 500);
                 margin-bottom: 10px;
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                align-self: start;
             }
         }
     

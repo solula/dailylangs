@@ -3,6 +3,10 @@
 .custom-select {
     @include text-base($size: 18px, $font-weight: 600);
     border: none;
+    background-color: transparent;
+    &--white {
+        @include text-base($size: 18px, $font-weight: 600, $color: $white);
+    }
 }
 
 

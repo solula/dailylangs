@@ -1,10 +1,21 @@
-@import '_variables';
+@import "_variables";
 
 .container {
     height: 30vh;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.stack {
+    display: flex;
+    gap: px;
+    &--row {
+        flex-direction: row;
+    }
+    &--column {
+        flex-direction: column;
+    }
 }
 
 @mixin ellipse-symbol($backgroundColor: transparent) {
