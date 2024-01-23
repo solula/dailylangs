@@ -1,5 +1,5 @@
 import React from "react";
-import CheckboxTable from "../CheckboxTable.tsx/CheckboxTable";
+import CheckboxTable from "../../../../components/ui/CheckboxTable/CheckboxTable";
 
 const CheckboxTableComplexity: React.FC = () => {
     return (

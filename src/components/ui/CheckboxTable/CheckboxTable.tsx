@@ -1,5 +1,5 @@
 import React from "react";
-import Checkbox from "../Checkbox.tsx/Checkbox";
+import Checkbox from "./Checkbox";
 
 interface CheckboxTableProps {
     elements: string[];

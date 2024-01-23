@@ -1,5 +1,5 @@
 import React from "react";
-import IconComponent from "../IconPointer/IconPointer";
+import IconComponent from "../../../components/ui/IconPointer/IconPointer";
 
 type ProductCardProps = {
     backgroundImage: string;
