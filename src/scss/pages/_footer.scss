@@ -1,0 +1,31 @@
+.footer {
+    padding: 45px;
+    background-color: $violet;
+    
+    align-items: center;
+    &__flexbox {margin-left: 72px;
+        justify-content: space-between;
+        display: flex;
+        &__menu {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            &__item {
+                @include text-base($size: 18px, $color: $white, $font-weight: 500);
+                margin-bottom: 10px;
+            }
+        }
+    
+        &__logo {
+            width: 100px;
+        }
+    }
+
+    &__copyright {
+        @include text-base($size: 18px, $color: $white, $font-weight: 500);
+        margin-top: 51px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

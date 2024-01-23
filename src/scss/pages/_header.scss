@@ -1,0 +1,51 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $white;
+    padding: 48px;
+    margin-left: 72px;
+
+    &__logo {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        gap: 61px;
+        &__text-list {
+            display: flex;
+            gap: 71px;
+            &__item {
+                @include text-base($font-weight: 500);
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                &--violet {
+                    color: $violet;
+                }
+            }
+        }
+        &__icon-list {
+            display: flex;
+            gap: 21px;
+            &__search {
+                width: 31px;
+                height: 31px;
+                margin-top: 18px;
+            }
+        
+            &__user-icon {
+                width: 61.929px;
+                height: 62.657px;
+            }
+        
+            &__select {
+                @include text-base($size: 18px, $font-weight: 600);
+                border: none;
+            }
+        }
+    }
+}
