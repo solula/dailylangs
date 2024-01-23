@@ -1,0 +1,26 @@
+@import '_variables';
+
+.container {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin ellipse-symbol($backgroundColor: transparent) {
+    background-color: $backgroundColor;
+    cursor: pointer;
+    border-radius: 50%;
+    height: 14px;
+    width: 14px;
+    border: 1px solid $violet;
+}
+
+@mixin square-symbol($backgroundColor: transparent) {
+    background-color: $backgroundColor;
+    cursor: pointer;
+    border-radius: 2px;
+    height: 18px;
+    width: 18px;
+    border: 1px solid $violet;
+}

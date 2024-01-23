@@ -1,0 +1,76 @@
+@import "base/_base-components";
+
+@mixin absolute-position {
+    position: absolute;
+}
+
+@mixin little-height {
+    height: 1px;
+}
+
+@mixin values-style {
+    color: $violet;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.slider {
+    position: relative;
+    width: 200px;
+    &__track {
+        @include absolute-position;
+        @include little-height;
+        background-color: $black;
+        width: 100%;
+        z-index: 1;
+    }
+    &__range {
+        @include absolute-position;
+        @include little-height;
+        background-color: $violet;
+        z-index: 2;
+    }
+    &__left-value {
+        @include absolute-position;
+        @include values-style;
+        left: 6px;
+    }
+    &__right-value {
+        @include absolute-position;
+        @include values-style;
+        right: 6px;
+    }
+}
+
+/* Removing the default appearance */
+.thumb,
+.thumb::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.thumb {
+    pointer-events: none;
+    position: absolute;
+    height: 0;
+    width: 200px;
+    outline: none;
+    &--left {
+        z-index: 3;
+    }
+    &--right {
+        z-index: 4;
+    }
+    /* For Chrome browsers */
+    &::-webkit-slider-thumb {
+        @include ellipse-symbol($violet);
+        pointer-events: all;
+        position: relative;
+    }
+    /* For Firefox browsers */
+    &::-moz-range-thumb {
+        @include ellipse-symbol($violet);
+        pointer-events: all;
+        position: relative;
+    }
+}

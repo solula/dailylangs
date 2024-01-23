@@ -1,0 +1,10 @@
+@import '_text';
+
+.custom-select {
+    @include text-base($size: 18px, $font-weight: 600);
+    border: none;
+}
+
+
+// width: 46px;
+// height: 35px;

@@ -1,0 +1,39 @@
+@import 'base/_variables';
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500;600;800&display=swap');
+
+@mixin text-base($size: 18px, $color: $black, $font-weight: 500) {
+    font-family: 'Mulish', sans-serif;
+    font-size: $size;
+    color: $color;
+    line-height: 120%;
+    letter-spacing: $size * 0.01;
+    font-weight: $font-weight;
+}
+
+.text {
+    &--normal {
+        @include text-base();
+    }
+
+    &--title {
+        @include text-base($size: 48px, $font-weight: 800); 
+    }
+
+    &--new-price{
+        @include text-base($size: 40px, $color: $white, $font-weight: 800);
+    }
+
+    &--old-price{
+        @include text-base($size: 20px, $color: $white, $font-weight: 800);
+        text-decoration: line-through red; 
+    }
+
+    &--surname {
+        @include text-base($size: 14px, $font-weight: bold);
+    }
+
+    &--sale-percent {
+        @include text-base($size: 10px, $color: $white, $font-weight: 600);
+    }
+}
+

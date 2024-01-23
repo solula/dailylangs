@@ -1,0 +1,18 @@
+@import 'base/_variables';
+
+.highlight {
+    border-radius: 100px;
+    padding: 7px 18px;
+    &--green {
+        background-color: $green;
+    }
+    &--violet {
+        background-color: $violet;
+    }
+    &--pink {
+        background-color: $pink;
+    }
+    &--little {
+        padding: 3px 10px;
+    }
+}
