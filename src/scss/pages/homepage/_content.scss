@@ -1,9 +1,8 @@
 .content {
+    @include stack($flexdirection: column, $gap: 0px);
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 0px;
     margin-bottom: 100px;
+
     &__title {
         display: flex;
         flex-direction: row;

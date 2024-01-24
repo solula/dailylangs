@@ -1,0 +1,3 @@
+.checkbox {
+    @include radio-check-base(true, square-symbol, checkbox);
+}

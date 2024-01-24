@@ -3,21 +3,11 @@
         @include stack();
     }
     &__image {
-        &--lines {
-            position: absolute;
-            z-index: -1;
-            left: 37px;
-        }
         &--ellipse {
             position: absolute;
             z-index: -1;
             right: -89px;
             margin-top: 60px;
-        }
-        &--star {
-            position: absolute;
-            z-index: -1;
-            right: 19px;
         }
     }
 }

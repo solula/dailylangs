@@ -5,7 +5,7 @@ const CheckboxTableComplexity: React.FC = () => {
     return (
         <RadioButtonTable
             elements={["Для всех", "Для начинающих", "Продвинутый уровень"]}
-            className="checkbox--ellipse"
+            className="radiobutton"
             groupName="complexity"
         />
     );

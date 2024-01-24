@@ -1,0 +1,40 @@
+@mixin radio-check-base(
+    $is_checkmark,
+    $button_shape: square-symbol,
+    $input_type: checkbox
+) {
+    input[type="#{$input_type}"] {
+        display: none;
+    }
+
+    label {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        padding-left: 25px;
+        &::before {
+            @if $button_shape == square-symbol {
+                @include square-symbol(transparent);
+            } @else {
+                @include ellipse-symbol(transparent);
+            }
+            content: "";
+            position: absolute;
+            left: 0;
+        }
+    }
+
+    @if $is_checkmark {
+        input[type="#{$input_type}"]:checked + label::before {
+            content: "\2713"; /* Unicode character for checkmark */
+            text-align: center;
+            line-height: 18px;
+            color: $violet;
+        }
+    } @else {
+        input[type="#{$input_type}"]:checked + label::before {
+            background-color: $violet;
+        }
+    }
+    margin-bottom: 11px;
+}

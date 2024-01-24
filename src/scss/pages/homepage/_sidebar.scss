@@ -1,6 +1,7 @@
 .sidebar {
-    @include stack($gap: 80px);
-    @include left-alignment;
+    @include stack($flexdirection: column, $gap: 80px);
+    margin-left: 96px;
+    margin-top: 34px;
     max-width: 300px;
 
     &__language-selector {
@@ -9,7 +10,7 @@
         border: none;
     }
     &__menu {
-        @include column-flex-display;
+        @include stack($flexdirection: column, $gap: 30px);
         &__text,
         &__slider,
         &__table {
@@ -21,8 +22,19 @@
         &__slider {
             margin-bottom: 40px;
         }
-        &__images {
+        &__image {
             height: 244px;
+            margin-bottom: 60px;
+            &--lines {
+                position: absolute;
+                z-index: -1;
+                left: 37px;
+            }
+            &--star {
+                position: absolute;
+                z-index: -1;
+                right: 19px;
+            }
         }
     }
 }

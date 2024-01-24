@@ -7,9 +7,9 @@
     justify-content: center;
 }
 
-@mixin stack($flexdirection: row) {
+@mixin stack($flexdirection: row, $gap: 16px) {
     display: flex;
-    gap: 16px;
+    gap: $gap;
     flex-direction: $flexdirection; // Use the parameter here
 }
 

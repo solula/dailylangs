@@ -11,7 +11,7 @@ const CheckboxTableSkills: React.FC = () => {
                 "Фонетика",
                 "Пунктуация",
             ]}
-            className="checkbox--square"
+            className="checkbox"
         />
     );
 };

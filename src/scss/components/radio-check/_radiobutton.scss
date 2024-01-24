@@ -1,0 +1,3 @@
+.radiobutton {
+    @include radio-check-base(false, ellipse-symbol, radio);
+}
