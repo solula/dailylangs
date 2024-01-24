@@ -31,6 +31,10 @@ const Sidebar = () => {
                 <div className="sidebar__menu__table">
                     <CheckboxTableSkills />
                 </div>
+                <div className="sidebar__menu__images">
+                    <img className="homepage__image--lines" src="./lines.svg" />
+                    <img className="homepage__image--star" src="./star.svg" />
+                </div>
             </div>
         </div>
     );

@@ -1,4 +1,4 @@
-@import "_variables";
+@import "variables";
 
 .container {
     height: 30vh;
@@ -7,15 +7,10 @@
     justify-content: center;
 }
 
-.stack {
+@mixin stack($flexdirection: row) {
     display: flex;
-    gap: px;
-    &--row {
-        flex-direction: row;
-    }
-    &--column {
-        flex-direction: column;
-    }
+    gap: 16px;
+    flex-direction: $flexdirection; // Use the parameter here
 }
 
 @mixin ellipse-symbol($backgroundColor: transparent) {

@@ -1,11 +1,12 @@
 import React from "react";
-import CheckboxTable from "../../../../components/ui/CheckboxTable/CheckboxTable";
+import RadioButtonTable from "src/components/ui/RadioboxTable/RadioButtonTable";
 
 const CheckboxTableComplexity: React.FC = () => {
     return (
-        <CheckboxTable
+        <RadioButtonTable
             elements={["Для всех", "Для начинающих", "Продвинутый уровень"]}
             className="checkbox--ellipse"
+            groupName="complexity"
         />
     );
 };

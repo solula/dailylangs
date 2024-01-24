@@ -3,9 +3,14 @@ import Sidebar from "./SideBar";
 
 export default function HomePage() {
     return (
-        <div className="stack stack--row">
-            <Sidebar />
-            <Content />
+        <div className="homepage">
+            <div>
+                <img className="homepage__image--ellipse" src="./ellipse.svg" />
+            </div>
+            <div className="homepage__stack">
+                <Sidebar />
+                <Content />
+            </div>
         </div>
     );
 }
