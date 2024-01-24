@@ -5,12 +5,14 @@
 }
 
 @mixin little-height {
+    @include absolute-position;
     height: 1px;
 }
 
 @mixin values-style {
+    @include absolute-position;
     color: $violet;
-    font-size: 12px;
+    font-size: 16px;
     margin-top: 20px;
 }
 
@@ -18,25 +20,21 @@
     position: relative;
     width: 200px;
     &__track {
-        @include absolute-position;
         @include little-height;
         background-color: $black;
         width: 100%;
         z-index: 1;
     }
     &__range {
-        @include absolute-position;
         @include little-height;
         background-color: $violet;
         z-index: 2;
     }
     &__left-value {
-        @include absolute-position;
         @include values-style;
         left: 6px;
     }
     &__right-value {
-        @include absolute-position;
         @include values-style;
         right: 6px;
     }
