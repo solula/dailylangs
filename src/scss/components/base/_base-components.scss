@@ -1,5 +1,11 @@
 @import "variables";
 
+@media (max-width: 768px) {
+    body {
+        background-color: aqua;
+    }
+}
+
 .container {
     height: 30vh;
     display: flex;

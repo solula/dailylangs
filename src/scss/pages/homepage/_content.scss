@@ -4,8 +4,8 @@
     margin-bottom: 100px;
 
     &__title {
-        display: flex;
-        flex-direction: row;
+        @include stack($flexdirection: row, $gap: 10px 0px);
+        flex-wrap: wrap;
         align-items: center;
         margin-bottom: 60px;
         &__text {

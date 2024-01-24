@@ -6,9 +6,10 @@
     background-color: $white;
 
     &__logo {
-        font-size: 24px;
-        font-weight: bold;
-        margin-right:30px;
+        &--mobile {
+            width: 131px;
+            height: 27px;
+        }
     }
 
     &__menu {
@@ -18,6 +19,9 @@
         &__text-list {
             display: flex;
             gap: 71px;
+            @media (max-width: $lg) {
+                gap: 51px;
+            }
             &__item {
                 @include text-base($font-weight: 500);
                 background-color: transparent;
@@ -30,21 +34,30 @@
         }
         &__icon-list {
             display: flex;
+            align-items: center;
             gap: 21px;
             &__search {
                 width: 31px;
                 height: 31px;
-                margin-top: 18px;
             }
 
             &__user-icon {
                 width: 61.929px;
                 height: 62.657px;
+                &--mobile {
+                    width: 40px;
+                    height: 40px;
+                }
             }
 
             &__select {
                 @include text-base($size: 18px, $font-weight: 600);
                 border: none;
+            }
+
+            &__menu-icon {
+                width: 40px;
+                height: 30px;
             }
         }
     }

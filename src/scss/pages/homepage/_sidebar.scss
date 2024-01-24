@@ -9,6 +9,11 @@
         align-self: flex-start;
         border: none;
     }
+    &__preferences {
+        width: 30px;
+        height: 30px;
+        padding: 10px;
+    }
     &__menu {
         @include stack($flexdirection: column, $gap: 30px);
         &__text,
