@@ -1,4 +1,4 @@
-import ProductCard from "./components/ProductCard";
+import ProductCard from "./ProductCard";
 
 const Content = () => {
     return (
@@ -10,10 +10,22 @@ const Content = () => {
                 </div>
             </div>
             <div className="content__cards-grid">
-                <ContentProductCard tutor_image="girl1.svg" />
-                <ContentProductCard tutor_image="girl2.svg" />
-                <ContentProductCard tutor_image="girl1.svg" />
-                <ContentProductCard tutor_image="girl2.svg" />
+                <ContentProductCard
+                    tutor_image="girl1.svg"
+                    background_image="A-Z.svg"
+                />
+                <ContentProductCard
+                    tutor_image="girl2.svg"
+                    background_image="ae.svg"
+                />
+                <ContentProductCard
+                    tutor_image="girl1.svg"
+                    background_image="A-Z.svg"
+                />
+                <ContentProductCard
+                    tutor_image="girl2.svg"
+                    background_image="ae.svg"
+                />
             </div>
         </div>
     );
@@ -21,14 +33,16 @@ const Content = () => {
 
 type ContentProductCardProps = {
     tutor_image: string;
+    background_image: string;
 };
 
 const ContentProductCard: React.FC<ContentProductCardProps> = ({
     tutor_image,
+    background_image,
 }) => {
     return (
         <ProductCard
-            backgroundImage="A-Z.svg"
+            backgroundImage={background_image}
             title="Английский шаг за шагом:"
             subtitle="Базовый уровень"
             tutor={{

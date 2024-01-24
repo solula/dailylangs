@@ -2,7 +2,7 @@ import MultiRangeSlider from "src/components/ui/MultiRangeSlider/multiRangeSlide
 import SelectBox from "src/components/ui/Selectbox/Selectbox";
 import CheckboxTableComplexity from "src/pages/HomePage/components/CheckboxTables/CheckboxTableComplexity";
 import CheckboxTableSkills from "src/pages/HomePage/components/CheckboxTables/CheckboxTableSkills";
-import ProductCard from "src/pages/HomePage/components/ProductCard";
+import ProductCard from "src/pages/HomePage/ProductCard";
 export default function HomePage() {
     return (
         <div className="filter">

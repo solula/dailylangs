@@ -1,7 +1,7 @@
+import CheckboxTable from "src/components/ui/CheckboxTable/CheckboxTable";
 import MultiRangeSlider from "src/components/ui/MultiRangeSlider/multiRangeSlider";
+import RadioButtonTable from "src/components/ui/RadioboxTable/RadioButtonTable";
 import SelectBox from "src/components/ui/Selectbox/Selectbox";
-import CheckboxTableComplexity from "./components/CheckboxTables/CheckboxTableComplexity";
-import CheckboxTableSkills from "./components/CheckboxTables/CheckboxTableSkills";
 
 const Sidebar = () => {
     return (
@@ -43,6 +43,31 @@ const Sidebar = () => {
                 </div>
             </div>
         </div>
+    );
+};
+
+const CheckboxTableComplexity: React.FC = () => {
+    return (
+        <RadioButtonTable
+            elements={["Для всех", "Для начинающих", "Продвинутый уровень"]}
+            className="radiobutton"
+            groupName="complexity"
+        />
+    );
+};
+
+const CheckboxTableSkills: React.FC = () => {
+    return (
+        <CheckboxTable
+            elements={[
+                "Грамматика",
+                "Лексика",
+                "Синтаксис",
+                "Фонетика",
+                "Пунктуация",
+            ]}
+            className="checkbox"
+        />
     );
 };
 
