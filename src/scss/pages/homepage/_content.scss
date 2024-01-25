@@ -26,5 +26,9 @@
         display: flex;
         flex-wrap: wrap;
         gap: 30px 60px;
+        @media (max-width: $mobile) {
+            gap: 18px 36px;
+            justify-content: center;
+        }
     }
 }

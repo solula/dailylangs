@@ -26,19 +26,19 @@ const ProductCard: React.FC<ProductCardProps> = ({
     return (
         <div className="card">
             <img src={backgroundImage} className="card__background-image" />
-            <text className="card__title">{title}</text>
-            <text className="card__subtitle">{subtitle}</text>
-            <text className="card__tutor__surname highlight highlight--green">
+            <h1 className="card__title">{title}</h1>
+            <h1 className="card__subtitle">{subtitle}</h1>
+            <span className="card__tutor__surname highlight highlight--green">
                 {tutor.surname}
-            </text>
+            </span>
             <IconComponent className="card__tutor__image__pointer" />
-            <text className="card__price--new">{price.new}₽</text>
-            <text className="card__price--sale highlight highlight--pink highlight--little">
+            <span className="card__price--new">{price.new}₽</span>
+            <span className="card__price--sale highlight highlight--pink highlight--little">
                 {percentage.toFixed(0)}%
-            </text>
-            <text className="card__price--old">{price.old}₽</text>
+            </span>
+            <span className="card__price--old">{price.old}₽</span>
             <img src="english-flag.svg" className="card__flag" />
-            <text className="card__read-more">Подробнее</text>
+            <span className="card__read-more">Подробнее</span>
             <img src={tutor.image} className="card__tutor__image" />
         </div>
     );

@@ -101,7 +101,7 @@
             @include bottom-right-position($bottom: 110px, $right: 25px);
             @media (max-width: $mobile) {
                 font-size: 8px;
-                @include bottom-right-position($bottom: 116px, $right: 36px);
+                @include bottom-right-position($bottom: 113px, $right: 28px);
             }
         }
     }
