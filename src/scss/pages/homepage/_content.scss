@@ -2,6 +2,11 @@
     @include stack($flexdirection: column, $gap: 0px);
     padding: 20px;
     margin-bottom: 100px;
+    &--small {
+        @include alignment-small;
+        margin-top: 33px;
+        margin-bottom: 60px;
+    }
 
     &__title {
         @include stack($flexdirection: row, $gap: 10px 0px);
@@ -10,6 +15,9 @@
         margin-bottom: 60px;
         &__text {
             @include text-base($size: 48px, $font-weight: 800);
+            &--small {
+                @include text-base($size: 32px, $font-weight: 800);
+            }
         }
     }
     &__cards-grid {

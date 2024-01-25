@@ -4,9 +4,12 @@
     justify-content: space-between;
     align-items: center;
     background-color: $white;
-
+    &--small {
+        @include alignment-small;
+        margin-top: 24px;
+    }
     &__logo {
-        &--mobile {
+        &--small {
             width: 131px;
             height: 27px;
         }
@@ -16,6 +19,9 @@
         display: flex;
         align-items: center;
         gap: 61px;
+        &--small {
+            gap: auto;
+        }
         &__text-list {
             display: flex;
             gap: 71px;
@@ -36,6 +42,9 @@
             display: flex;
             align-items: center;
             gap: 21px;
+            &--small {
+                gap: 18px;
+            }
             &__search {
                 width: 31px;
                 height: 31px;
@@ -44,7 +53,7 @@
             &__user-icon {
                 width: 61.929px;
                 height: 62.657px;
-                &--mobile {
+                &--small {
                     width: 40px;
                     height: 40px;
                 }

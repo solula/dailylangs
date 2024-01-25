@@ -1,6 +1,9 @@
 .homepage {
     &__stack {
-        @include stack();
+        @include stack($flexdirection: row, $gap: 16px);
+        &--mobile {
+            @include stack($flexdirection: column, $gap: 16px);
+        }
     }
     &__image {
         &--ellipse {

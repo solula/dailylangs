@@ -3,7 +3,11 @@
     margin-left: 96px;
     margin-top: 34px;
     max-width: 300px;
-
+    &--small {
+        @include stack($flexdirection: row, $gap: 6px);
+        @include alignment-small;
+        margin-top: 56px;
+    }
     &__language-selector {
         @include text-base($size: 18px, $color: $white, $font-weight: 600);
         align-self: flex-start;
@@ -12,7 +16,7 @@
     &__preferences {
         width: 30px;
         height: 30px;
-        padding: 10px;
+        padding: 7px;
     }
     &__menu {
         @include stack($flexdirection: column, $gap: 30px);

@@ -16,3 +16,9 @@ $xl: 1536px;
     margin-left: 72px;
     padding: 48px;
 }
+
+@mixin alignment-small {
+    margin-left: 14px;
+    margin-right: 14px;
+    padding: 0px;
+}

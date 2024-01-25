@@ -1,9 +1,38 @@
+import { useState } from "react";
 import CheckboxTable from "src/components/ui/CheckboxTable/CheckboxTable";
 import MultiRangeSlider from "src/components/ui/MultiRangeSlider/multiRangeSlider";
 import RadioButtonTable from "src/components/ui/RadioboxTable/RadioButtonTable";
 import SelectBox from "src/components/ui/Selectbox/Selectbox";
+import useResizeEffect from "src/hooks/useResizeEffect";
 
 const Sidebar = () => {
+    const [screenSize, setScreenSize] = useState(window.innerWidth);
+
+    useResizeEffect(() => {
+        setScreenSize(window.innerWidth);
+    });
+
+    return screenSize < 1000 ? <SmallSidebar /> : <BigSidebar />;
+};
+
+const SmallSidebar = () => {
+    return (
+        <div className="sidebar--small">
+            <div className="sidebar__language-selector highlight highlight--violet">
+                <SelectBox
+                    options={["ENG", "ES", "RU"]}
+                    className="sidebar__language-selector highlight highlight--violet highlight--little"
+                />
+            </div>
+            <img
+                className="sidebar__preferences highlight highlight--violet"
+                src="./preferences.svg"
+            />
+        </div>
+    );
+};
+
+const BigSidebar = () => {
     return (
         <div className="sidebar">
             <div className="sidebar__language-selector highlight highlight--violet">
