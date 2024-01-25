@@ -1,9 +1,11 @@
 .sidebar {
-    @include stack($flexdirection: column, $gap: 80px);
-    margin-left: 96px;
-    margin-top: 34px;
-    max-width: 300px;
-    &--small {
+    @media (min-width: $mobile) {
+        @include stack($flexdirection: column, $gap: 80px);
+        margin-left: 96px;
+        margin-top: 34px;
+        max-width: 300px;
+    }
+    @media (max-width: $mobile) {
         @include stack($flexdirection: row, $gap: 6px);
         @include alignment-small;
         margin-top: 56px;
@@ -32,8 +34,10 @@
             margin-bottom: 40px;
         }
         &__image {
-            height: 244px;
-            margin-bottom: 60px;
+            @media (min-width: $mobile) {
+                height: 244px;
+                margin-bottom: 60px;
+            }
             &--lines {
                 position: absolute;
                 z-index: -1;
@@ -43,6 +47,11 @@
                 position: absolute;
                 z-index: -1;
                 right: 19px;
+                @media (max-width: $mobile) {
+                    width: 94px;
+                    height: 94px;
+                    right: -9px;
+                }
             }
         }
     }

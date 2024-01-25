@@ -4,12 +4,12 @@
     justify-content: space-between;
     align-items: center;
     background-color: $white;
-    &--small {
+    @media (max-width: $mobile) {
         @include alignment-small;
         margin-top: 24px;
     }
     &__logo {
-        &--small {
+        @media (max-width: $mobile) {
             width: 131px;
             height: 27px;
         }
@@ -19,7 +19,7 @@
         display: flex;
         align-items: center;
         gap: 61px;
-        &--small {
+        @media (max-width: $mobile) {
             gap: auto;
         }
         &__text-list {
@@ -42,7 +42,7 @@
             display: flex;
             align-items: center;
             gap: 21px;
-            &--small {
+            @media (max-width: $mobile) {
                 gap: 18px;
             }
             &__search {
@@ -53,7 +53,7 @@
             &__user-icon {
                 width: 61.929px;
                 height: 62.657px;
-                &--small {
+                @media (max-width: $mobile) {
                     width: 40px;
                     height: 40px;
                 }

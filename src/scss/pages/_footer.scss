@@ -1,32 +1,60 @@
 .footer {
     padding: 45px;
+    @media (max-width: $mobile) {
+        margin-top: 4px;
+        padding: 14px;
+    }
     background-color: $violet;
     align-items: center;
-    &__flexbox {margin-left: 72px;
+    &__flexbox {
+        @media (min-width: $mobile) {
+            margin-left: 72px;
+        }
         justify-content: space-between;
+        align-items: center;
         display: flex;
         &__menu {
             display: flex;
             flex-direction: column;
             justify-content: center;
+            gap: 13px;
+            @media (max-width: $mobile) {
+                gap: 18px;
+            }
             &__item {
-                @include text-base($size: 18px, $color: $white, $font-weight: 500);
+                @include text-base(
+                    $size: 18px,
+                    $color: $white,
+                    $font-weight: 500
+                );
+                @media (max-width: $mobile) {
+                    font-size: 14px;
+                }
                 text-align: left;
-                margin-bottom: 10px;
                 background-color: transparent;
                 border: none;
                 cursor: pointer;
                 align-self: start;
             }
         }
-    
+
         &__logo {
-            width: 100px;
+            width: 223px;
+            height: 43px;
+            @media (max-width: $mobile) {
+                width: 125px;
+                height: 25px;
+            }
         }
     }
 
     &__copyright {
         @include text-base($size: 18px, $color: $white, $font-weight: 500);
+        @media (max-width: $mobile) {
+            font-size: 14px;
+            margin-top: 28px;
+            margin-bottom: 17px;
+        }
         margin-top: 51px;
         display: flex;
         justify-content: center;

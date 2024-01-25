@@ -17,7 +17,7 @@ const Sidebar = () => {
 
 const SmallSidebar = () => {
     return (
-        <div className="sidebar--small">
+        <div className="sidebar">
             <div className="sidebar__language-selector highlight highlight--violet">
                 <SelectBox
                     options={["ENG", "ES", "RU"]}
@@ -28,6 +28,9 @@ const SmallSidebar = () => {
                 className="sidebar__preferences highlight highlight--violet"
                 src="./preferences.svg"
             />
+            <div className="sidebar__menu__image">
+                <img className="sidebar__menu__image--star" src="./star.svg" />
+            </div>
         </div>
     );
 };

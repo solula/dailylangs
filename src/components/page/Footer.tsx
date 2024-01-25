@@ -10,7 +10,7 @@ const Footer = () => {
                         Условия пользования
                     </button>
                 </nav>
-                <img className="footer__logo" src="./white-logo.svg" />
+                <img className="footer__flexbox__logo" src="./white-logo.svg" />
             </nav>
             <div className="footer__copyright">
                 © DailyLangs | 2023. Все права защищены

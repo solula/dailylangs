@@ -2,21 +2,23 @@
     @include stack($flexdirection: column, $gap: 0px);
     padding: 20px;
     margin-bottom: 100px;
-    &--small {
+    @media (max-width: $mobile) {
         @include alignment-small;
         margin-top: 33px;
         margin-bottom: 60px;
     }
-
     &__title {
         @include stack($flexdirection: row, $gap: 10px 0px);
         flex-wrap: wrap;
         align-items: center;
         margin-bottom: 60px;
+        @media (max-width: $mobile) {
+            margin-bottom: 52px;
+        }
         &__text {
             @include text-base($size: 48px, $font-weight: 800);
-            &--small {
-                @include text-base($size: 32px, $font-weight: 800);
+            @media (max-width: $mobile) {
+                font-size: 32px;
             }
         }
     }

@@ -46,12 +46,12 @@ const BigHeader = () => {
 
 const SmallHeader = () => {
     return (
-        <header className="header header--small">
-            <img className="header__logo--small" src="./logo.svg" />
-            <nav className="header__menu header__menu--small">
-                <nav className="header__menu__icon-list header__menu__icon-list--small">
+        <header className="header header">
+            <img className="header__logo" src="./logo.svg" />
+            <nav className="header__menu header__menu">
+                <nav className="header__menu__icon-list">
                     <img
-                        className="header__menu__icon-list__user-icon--small"
+                        className="header__menu__icon-list__user-icon"
                         src="./user.svg"
                     />
                     <img
