@@ -48,6 +48,7 @@
             &__search {
                 width: 31px;
                 height: 31px;
+                cursor: pointer;
             }
 
             &__user-icon {
@@ -57,16 +58,19 @@
                     width: 40px;
                     height: 40px;
                 }
+                cursor: pointer;
             }
 
             &__select {
                 @include text-base($size: 18px, $font-weight: 600);
                 border: none;
+                cursor: pointer;
             }
 
             &__menu-icon {
                 width: 40px;
                 height: 30px;
+                cursor: pointer;
             }
         }
     }

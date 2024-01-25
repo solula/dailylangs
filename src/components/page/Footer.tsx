@@ -3,12 +3,12 @@ const Footer = () => {
         <footer className="footer">
             <nav className="footer__flexbox">
                 <nav className="footer__flexbox__menu">
-                    <button className="footer__flexbox__menu__item">
+                    <a className="footer__flexbox__menu__item">
                         Политика конфиденциальности
-                    </button>
-                    <button className="footer__flexbox__menu__item">
+                    </a>
+                    <a className="footer__flexbox__menu__item">
                         Условия пользования
-                    </button>
+                    </a>
                 </nav>
                 <img className="footer__flexbox__logo" src="./white-logo.svg" />
             </nav>
